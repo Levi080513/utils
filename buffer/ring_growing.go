@@ -38,7 +38,7 @@ func NewRingGrowing(initialSize int) *RingGrowing {
 // ReadOne reads (consumes) first item from the buffer if it is available, otherwise returns false.
 func (r *RingGrowing) ReadOne() (data interface{}, ok bool) {
 	if r.readable == 0 {
-		fmt.Printf("======= check object")
+		fmt.Printf("======= check object \n")
 		for _, value := range r.data {
 			if value == nil {
 				continue
